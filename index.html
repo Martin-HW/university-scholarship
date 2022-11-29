@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Martin's App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="page-header"></h1>
+      <form method="post" action="javascript:void(0)" onsubmit="Add()">
+        <label for="firstName">First Name:</label>
+        <input
+          id="firstName"
+          type="text"
+          name="firstName"
+          value=""
+          placeholder="Enter your first name"
+          required
+        />
+        <br />
+        <label for="lastName">Last Name:</label>
+        <input
+          id="lastName"
+          type="text"
+          name="lastName"
+          placeholder="Enter your last name"
+          required
+        />
+        <br />
+        <label for="gpa">Grade Point Average:</label>
+        <input
+          id="gpa"
+          type="text"
+          name="gpa"
+          placeholder="Enter your GPA"
+          required
+        />
+        <br />
+        <input class="button-primary" type="submit" value="Submit Info" />
+      </form>
+      <br />
+      <table class="u-full-width">
+        <tr>
+          <th>Student ID:</th>
+          <th>First Name:</th>
+          <th>Last Name:</th>
+          <th>GPA:</th>
+          <th>Scholarship:</th>
+        </tr>
+        <tbody id="students"></tbody>
+      </table>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
